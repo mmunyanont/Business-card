@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Digital business card of Maitree Munyanont, Researcher at TISTR">
+  <title>Maitree Munyanont | TISTR</title>
+  <style>
+    :root{
+      --ink:#17203b;
+      --muted:#667085;
+      --tistr:#3036a2;
+      --panel:#ffffff;
+      --line:#e8eaf2;
+      --bg:#f4f6fb;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:-apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans Thai",Arial,sans-serif;
+      background:linear-gradient(180deg,#eef1fb 0%,#f8f9fc 42%,#ffffff 100%);
+      color:var(--ink);
+      min-height:100vh;
+    }
+    .wrap{
+      max-width:520px;
+      margin:0 auto;
+      padding:24px 16px 40px;
+    }
+    .card{
+      background:rgba(255,255,255,.97);
+      border:1px solid rgba(48,54,162,.10);
+      border-radius:28px;
+      box-shadow:0 20px 60px rgba(28,39,92,.10);
+      overflow:hidden;
+    }
+    .hero{
+      padding:28px 24px 20px;
+      text-align:center;
+      background:
+        radial-gradient(circle at 50% -10%,rgba(48,54,162,.16),transparent 38%),
+        #fff;
+    }
+    .logo{
+      width:118px;
+      height:auto;
+      display:block;
+      margin:0 auto 18px;
+    }
+    .photo{
+      width:138px;
+      height:138px;
+      border-radius:50%;
+      object-fit:cover;
+      object-position:58% 42%;
+      border:5px solid #fff;
+      box-shadow:0 8px 30px rgba(31,42,98,.18);
+      margin-bottom:16px;
+    }
+    h1{
+      font-size:28px;
+      line-height:1.15;
+      margin:2px 0 4px;
+      letter-spacing:-.02em;
+    }
+    .thai-name{
+      font-size:18px;
+      font-weight:600;
+      margin:0 0 7px;
+    }
+    .role{
+      color:var(--tistr);
+      font-weight:700;
+      font-size:16px;
+      margin-bottom:18px;
+    }
+    .org-en{
+      font-size:15px;
+      line-height:1.5;
+      font-weight:600;
+      margin:0 auto 8px;
+      max-width:410px;
+    }
+    .org-th{
+      color:var(--muted);
+      font-size:14px;
+      line-height:1.6;
+      margin:0 auto;
+      max-width:420px;
+    }
+    .actions{
+      padding:20px 20px 10px;
+    }
+    .save{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:54px;
+      border-radius:16px;
+      text-decoration:none;
+      background:var(--tistr);
+      color:#fff;
+      font-weight:800;
+      letter-spacing:.02em;
+      box-shadow:0 9px 20px rgba(48,54,162,.22);
+    }
+    .grid{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:12px;
+      margin-top:12px;
+    }
+    .action{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:50px;
+      border:1px solid var(--line);
+      border-radius:15px;
+      color:var(--ink);
+      text-decoration:none;
+      font-weight:700;
+      background:#fff;
+    }
+    .details{
+      padding:14px 20px 24px;
+    }
+    .detail{
+      display:flex;
+      gap:12px;
+      align-items:flex-start;
+      padding:14px 4px;
+      border-top:1px solid var(--line);
+    }
+    .icon{
+      width:34px;height:34px;border-radius:10px;
+      display:grid;place-items:center;
+      background:#f0f2ff;color:var(--tistr);font-weight:800;
+      flex:0 0 auto;
+    }
+    .label{
+      color:var(--muted);
+      font-size:12px;
+      margin-bottom:2px;
+    }
+    .value{
+      font-size:14px;
+      line-height:1.45;
+      word-break:break-word;
+    }
+    .footer{
+      text-align:center;
+      color:#98a2b3;
+      font-size:12px;
+      padding:18px 0 2px;
+    }
+    @media (max-width:380px){
+      h1{font-size:24px}
+      .photo{width:122px;height:122px}
+      .grid{grid-template-columns:1fr}
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <section class="card">
+      <div class="hero">
+        <img class="logo" src="tistr-logo.png" alt="TISTR logo">
+        <img class="photo" src="profile.jpg" alt="Maitree Munyanont">
+        <h1>Maitree Munyanont</h1>
+        <div class="thai-name">ไมตรี มัณยานนท์</div>
+        <div class="role">Researcher | นักวิจัย</div>
+
+        <p class="org-en">
+          Expert Center of Innovative Agriculture<br>
+          Thailand Institute of Scientific and Technological Research (TISTR)
+        </p>
+        <p class="org-th">
+          ศูนย์เชี่ยวชาญนวัตกรรมเกษตรสร้างสรรค์<br>
+          สถาบันวิจัยวิทยาศาสตร์และเทคโนโลยีแห่งประเทศไทย
+        </p>
+      </div>
+
+      <div class="actions">
+        <a class="save" href="Maitree_Munyanont.vcf" download>
+          ＋ SAVE CONTACT
+        </a>
+
+        <div class="grid">
+          <a class="action" href="tel:+66894828066">☎ Call</a>
+          <a class="action" href="mailto:maitree_m@tistr.or.th">✉ Email</a>
+        </div>
+      </div>
+
+      <div class="details">
+        <div class="detail">
+          <div class="icon">T</div>
+          <div>
+            <div class="label">Phone</div>
+            <div class="value">+66 89 482 8066</div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="icon">@</div>
+          <div>
+            <div class="label">Email</div>
+            <div class="value">maitree_m@tistr.or.th</div>
+          </div>
+        </div>
+        <div class="detail">
+          <div class="icon">R</div>
+          <div>
+            <div class="label">Position</div>
+            <div class="value">Researcher, Expert Center of Innovative Agriculture</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="footer">Digital Business Card • TISTR</div>
+  </main>
+</body>
+</html>
